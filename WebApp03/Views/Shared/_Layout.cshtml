@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- IE可能不見得有效 -->
+    <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+    <!-- 設定成馬上就過期 -->
+    <META HTTP-EQUIV="EXPIRES" CONTENT="0">
+    @* <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE"> *@
+    <!-- 與第一行是同樣的作用 -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <!-- font-awesome -->
+    @* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> *@
+    <link rel="stylesheet" href="@Href("~/static")/resources/font-awesome/fontawesome-6.1.1/css/all.css">
+    <!--    基礎版面樣式  -->
+    <link rel="stylesheet" href="@Href("~/static")/template/css/back_layout.css">
+    <title>@ViewBag.Title - 我的 ASP.NET 應用程式</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <style>
+        .container {
+            padding: 10px 0px;
+        }
+        
+        h4 {
+            margin: 2rem 0rem 1rem;
+        }
+        
+        .table-image td, .table-image th {
+            vertical-align: middle;
+        }
+        
+        .table_container{
+            /*width: 80%;*/
+            width: calc(100% - var(--aside-width));
+            margin: auto;
+            padding: 10px 0;
+        }
+        
+        header.header{
+            z-index: 10;
+        }
+        
+        .page_nav_item{
+            display: inline-block;
+            /*width: 3px;*/
+            min-width: 30px;
+            padding: 0px 2px;
+        }
+        
+        a[disabled="disabled"] {
+            pointer-events: none;
+            visibility: hidden;
+        }
+        
+    </style>
+</head>
+<body>
+@RenderSection("header", required: false)
+<aside class="aside">
+    <img class="img" src="@Href("~/static")/images/Book2.png" height="130" width="130"/>
+    <nav class="nav">
+        <ul class="menu">
+            <li>
+                <img class="img2" src="@Href("~/static")/images/member.png"
+                     height="20px" width="20px">
+                <label for="btn-1" class="label">
+                    項目管理<span class="fas fa-caret-down"></span>
+                </label>
+                <input class="aside" type="checkbox" id="btn-1">
+                <ul>
+                    <li>
+                        <a id="a" href="@Href("~/Home/Index")">員工管理</a>
+                    </li>
+                    <li>
+                        <a id="a" href="@Href("~/Home/Subject")">課程管理</a>
+                    </li>
+                    <li>
+                        <a id="a" href="@Href("~/Home/Exam")">成績管理</a>
+                    </li>
+                    <li>
+                        <a id="a" href="@Href("~/Home/LookUpScore")">成績查詢</a>
+                    </li>
+                    <li>
+                        <a id="a" href="@Href("~/Home/LookUpScoreGroupByClass")">班級成績</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <img class="img2" src="@Href("~/static")/images/member.png"
+                     height="20px" width="20px">
+                <label for="btn-2" class="label">
+                    會員管理<span class="fas fa-caret-down"></span>
+                </label>
+                <input class="aside" type="checkbox" id="btn-2">
+                <ul>
+                    <li>
+                        <a id="a"
+                           href="#">
+                            會員資料
+                        </a>
+                    </li>
+                    <!-- <li><a id="a" ref ="#">書目詳情</a></li> -->
+                </ul>
+            </li>
+
+            @* <li> *@
+            @*     <img class="img2" src="@Href("~/static")/images/coin.png" height="20px" *@
+            @*          width="20px"> *@
+            @*     <label for="btn-3" class="label"> *@
+            @*         金流管理<span class="fas fa-caret-down"></span> *@
+            @*     </label> *@
+            @*     <input class="aside" type="checkbox" id="btn-3"> *@
+            @*     <ul> *@
+            @*         <!-- <li><a id="a" ref ="#">二手商品匯款管理</a></li> --> *@
+            @*         <li> *@
+            @*             <a id="a" href="">查詢錢包使用紀錄</a> *@
+            @*         </li> *@
+            @*     </ul> *@
+            @* </li> *@
+
+            @* <li> *@
+            @*     <img class="img2" src="@Href("~/static")/images/mall.png" height="20px" *@
+            @*          width="20px"> *@
+            @*     <label for="btn-5" class="label"> *@
+            @*         一般商城<span class="fas fa-caret-down"></span> *@
+            @*     </label> *@
+            @*     <input class="aside" type="checkbox" id="btn-5"> *@
+            @*     <ul> *@
+            @*         <li> *@
+            @*             <a id="a" href="">促銷專案管理</a> *@
+            @*         </li> *@
+            @*         <li> *@
+            @*             <a id="a" href="">一般商品管理</a> *@
+            @*         </li> *@
+            @*         <li> *@
+            @*             <a id="a" href="">商品訂單管理</a> *@
+            @*         </li> *@
+            @*     </ul> *@
+            @* </li> *@
+
+            @* <li> *@
+            @*     <img class="img2" src="@Href("~/static")/images/bid.png" height="20px" *@
+            @*          width="20px"> *@
+            @*     <label for="btn-7" class="label"> *@
+            @*         商城競標<span class="fas fa-caret-down"></span> *@
+            @*     </label> *@
+            @*     <input class="aside" type="checkbox" id="btn-7"> *@
+            @*     <ul> *@
+            @*         <li> *@
+            @*             <a id="a" href="">競標商品管理</a> *@
+            @*         </li> *@
+            @*         <li> *@
+            @*             <a id="a" href="">競標訂單管理</a> *@
+            @*         </li> *@
+            @*     </ul> *@
+            @* </li> *@
+
+            @* <li> *@
+            @*     <img class="img2" src="@Href("~/static")/images/cs2.png" height="20px" *@
+            @*          width="20px"> *@
+            @*     <label for="btn-8" class="label"> *@
+            @*         客服管理<span class="fas fa-caret-down"></span> *@
+            @*     </label> *@
+            @*     <input class="aside" type="checkbox" id="btn-8"> *@
+            @*     <ul> *@
+            @*         <li> *@
+            @*             <a id="a" href="">討論留言板管理</a> *@
+            @*         </li> *@
+            @*         <li> *@
+            @*             <a id="a" href="">FAQ管理</a> *@
+            @*         </li> *@
+            @*     </ul> *@
+            @* </li> *@
+
+            @* <li id="bookmng"> *@
+            @*     <img class="img2" src="@Href("~/static")/images/book.png" height="20px" *@
+            @*          width="20px"> *@
+            @*     書目管理 *@
+            @*     <a href="#"></a> *@
+            @* </li> *@
+
+            @* <li id="logout"> *@
+            @*     <FORM METHOD="get" ACTION=""> *@
+            @*         <img class="img2" src="@Href("~/static")/images/logout.png" height="20px" *@
+            @*              width="20px"> *@
+            @*         <input type="submit" value="登出" *@
+            @*                style="background-color:rgb(0, 100, 125); color:white; border: none"> *@
+            @*     </FORM> *@
+            @* </li> *@
+
+        </ul>
+        @* <input type="hidden" id="prefix_aside" value="${pageContext.request.contextPath}"> *@
+    </nav>
+
+</aside>
+<script src="@Href("~/static")/template/js/back_layout.js"></script>
+
+@RenderBody()
+
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@section header
+{
+    <header class="header">
+        <h1>員工管理</h1>
+    </header>
+}
+
+<main class="main">
+    <div class="table_container">
+
+        <div class="container">
+
+            <div class="row justify-content-between">
+                <div class="input-group col-6 mb-3">
+                    <button type="button" class="btn btn-outline-secondary ml-2" id="add_emp_btn" data-toggle="modal" data-target="#add_emp_modal">
+                        添加員工
+                    </button>
+                </div>
+                
+                <div class="input-group col-6 mb-3">
+                    <input type="search" id="keyword_input" class="form-control rounded" placeholder="依員工姓名搜尋"
+                           aria-label="Search" aria-describedby="search-addon"/>
+                    <button type="button" class="btn btn-outline-info ml-2" id="search_btn">search</button>
+                </div>
+                
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <table class="table table-bordered text-center table-hover">
+                        <thead class="table-success">
+                        <tr>
+                            <th scope="col" style="display: none">編號</th>
+                            <th scope="col" class="col-2">員工編號</th>
+                            <th scope="col" class="col-2">員工姓名</th>
+                            <th scope="col" class="col-2">編輯/刪除</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        @* <tr> *@
+                        @*     <th scope="row">1</th> *@
+                        @*     <td>測試使用</td> *@
+                        @*     <td> *@
+                        @*         <button type="button" class="btn btn-primary"> *@
+                        @*             <i class="far fa-eye"></i> *@
+                        @*         </button> *@
+                        @*     </td> *@
+                        @* </tr> *@
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div id="page_nav">
+                @* <a href="#">第一頁</a> *@
+                @* <a href="#">上一頁</a> *@
+                @* <a href="#">3</a> *@
+                @* 【4】 *@
+                @* <a href="#">5</a> *@
+                @* <a href="#">下一頁</a> *@
+                @* <a href="#">最末頁</a> *@
+                @* <span> *@
+                @*     共4頁，20筆紀錄 <input value="4" type="number" name="pageNo" id="pageNo" size="3"/> 頁 *@
+                @*     <input type="submit" value="Go" class="btn btn-info ml-2"/> *@
+                @* </span> *@
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+
+<div id="modal_container">
+    <div class="modal fade" id="add_emp_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="add_emp_modal_label">新增員工</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="add_form">
+                        <div class="form-group">
+                            <label for="emp_no" class="col-form-label">員工編號: </label>
+                            <input type="text" class="form-control" id="emp_no" name="EmpNo">
+                        </div>
+                        <div class="form-group">
+                            <label for="emp_name" class="col-form-label">員工姓名:</label>
+                            <input type="text" class="form-control" id="emp_name" name="Name">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">返回</button>
+                    <button type="button" class="btn btn-primary" id="add_emp_submit_btn">送出</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="update_emp_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="update_modal_label">更新資訊</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="update_form">
+                        <input type="text" class="form-control" name="Id" id="update_emp_id" hidden value="">
+                        <div class="form-group">
+                            <label for="update_emp_no" class="col-form-label">員工編號: </label>
+                            <input type="text" class="form-control" name="EmpNo" id="update_emp_no" readonly value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="update_emp_name" class="col-form-label">員工姓名:</label>
+                            <input type="text" class="form-control" id="update_emp_name" name="Name">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">返回</button>
+                    <button type="button" class="btn btn-primary" id="update_emp_submit_btn">送出</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- sweetalert -->
+@* <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> *@
+<script src="@Href("~/static")/resources/sweetalert/sweetalert.min.js"></script>
+<script src="~/static/Emp/js/emp_view.js"></script>

@@ -1,0 +1,360 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style-type: none;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        /* 導航列樣式 */
+        header {
+            background-color: #678F74;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav {
+            width: 1200px;
+            padding: 5px 0px 0px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        div.logo img{
+            height: 60px;
+            cursor: pointer;
+        }
+
+div.logo img{
+    height: 60px;
+    cursor: pointer;
+}
+
+.nav-item {
+    margin-top: 18px;
+    display: flex;
+}
+nav .mall button {
+    background-color: #678F74;
+    color: lightgray;
+    border: 0px;
+    position: relative;
+    font-family: 'Poppins';
+}
+nav .mall button:after {
+    background-color: white;
+    content: "";
+    position:absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+nav .mall button:hover{
+    color: white;
+}
+nav .mall button:hover:after {
+    width: 100%;
+}
+.nav_mid {
+    display: flex;
+}
+.search {
+    display: flex;
+    align-items: center;
+}
+.search>input {
+    background-color: white;
+    box-sizing: border-box;
+    height: 32px;
+    width: 280px;
+    border: 10px;
+    padding: 15px;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px 0px 0px 5px;
+    font-family: Noto Sans TC, serif;
+}
+.search button {
+    background: lightgray;
+    cursor: pointer;
+    display: block;
+    border: 10px;
+    height: 32px;
+    width: 50px;
+    padding: 4px 15px 10px 15px;
+    border-radius: 0px 5px 5px 0px;
+}
+button img {
+    width: 23px;
+    margin-bottom: 5px;
+}
+
+
+        .nav-item {
+            margin-top: 18px;
+            display: flex;
+        }
+        nav .mall button {
+            background-color: #678F74;
+            color: lightgray;
+            border: 0px;
+            position: relative;
+            font-family: 'Poppins';
+        }
+        nav .mall button:after {
+            background-color: white;
+            content: "";
+            position:absolute;
+            height: 3px;
+            width: 0;
+            left: 0;
+            bottom: -10px;
+            transition: 0.3s;
+        }
+        nav .mall button:hover{
+            color: white;
+        }
+        nav .mall button:hover:after {
+            width: 100%;
+        }
+        .nav_mid {
+            display: flex;
+        }
+        .search {
+            display: flex;
+            align-items: center;
+        }
+        .search>input {
+            background-color: white;
+            box-sizing: border-box;
+            height: 32px;
+            width: 280px;
+            border: 10px;
+            padding: 15px;
+            outline: none;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px 0px 0px 5px;
+            font-family: Noto Sans TC, serif;
+        }
+        .search button {
+            background: lightgray;
+            cursor: pointer;
+            display: block;
+            border: 10px;
+            height: 32px;
+            width: 50px;
+            padding: 4px 15px 10px 15px;
+            border-radius: 0px 5px 5px 0px;
+        }
+        button img {
+            width: 23px;
+            margin-bottom: 5px;
+        }
+
+        .mall {
+            margin-top: 12px;
+            margin-left: 10px;
+        }
+        .mall>ul {
+            display: flex;
+        }
+        .mall>ul>li {
+            padding: 8px 8px 0px;
+        }
+
+        .right_side{
+            display: flex;
+        }
+        .cart button#cart_btn{
+            border:1.5px solid white;
+            background: #678F74;
+            height: 30px;
+            width: 30px;
+            margin-top: 17px;
+            margin-right: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        div.member > img{
+          margin-top: -5px;
+          margin-right: 10px;
+          width: 33px;
+          height: 35px;
+        }
+        .dropbtn {
+            position: relative;
+            background-color: #678F74;
+            color: lightgray;
+            padding-top: 2px;
+            display: flex;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .dropdown {
+            position: relative; 
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            width: 120px;
+            right: 0;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+        .dropdown-content a {
+            color: #678F74;
+            background-color: #e9e9e9;
+            padding: 6px 12px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            width: 110px;
+            color: #e9e9e9;
+            background-color: #678F74;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropbtn:hover {
+            color: white;
+        }
+        
+        
+        /* 輪播 */
+.carousel .carousel-item {
+            height: 350px;
+            background-color: #777;
+        }
+        .carousel-inner > .carousel-item > img {
+            position: absolute;
+            object-fit: contain;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        .carousel > button{
+            background-color: rgba(181, 181, 181, 0.9);
+            height: 60px;
+            width: 5%;
+            margin-top: 130px;
+        }
+        .carousel > button:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+        .size_ctrl{
+            width: 1263px;
+            margin: auto;
+        }
+
+        /* 商品列表 */
+        main.main{
+            width: 960px;
+            padding: 25px 0px 25px;
+            margin: auto;
+        }
+        main.main ul.item_list{
+            border: 1px solid blue;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        main.main ul.item_list > li{
+            border: 1px solid black;
+            width: calc((100% - 60px) / 4);
+            margin-right: 20px;
+            margin-bottom: 80px;
+        }
+        main.main ul.item_list > li:nth-child(4n){ 
+            margin-right: 0px;
+        }
+        #bk{
+            margin-left: 40px;
+            height: 200px;
+            width: auto;
+        }
+        .item_text{
+            border: 1px solid white;
+            display: block; 
+            white-space: nowrap; 
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+@media (max-width: 767.98px){
+          main.main{
+        margin-left: 0;
+        width: 100%;
+    }
+}
+@media (max-width: 767.98px){
+    main.main ul.item_list > li{
+        width: calc((100% - 20px) / 2);
+    }
+}
+        
+
+        /*footer*/
+        footer{
+            margin: auto;
+            justify-content: space-between;
+        }
+        .footer-dark {
+            margin-top: 30px;
+            display: flex;
+            padding: 5px;
+            color: white;
+            background-color: #678F74;
+        }
+        div.contain {
+            display: flex;  
+            width: 1200px;
+            justify-content: space-between;
+        }
+        div.contain item{
+            width: 300px;
+        }
+        div.contain ul a {
+            color: inherit;
+            text-decoration: none;
+            opacity: 0.6;
+            font-size: 12px;
+        }
+        div.contain ul a:hover {
+            opacity: 0.95;
+        }
+        div.contain p {
+            opacity: 0.6;
+            font-size: 6px;
+        }
+        .footer-dark .copyright {
+            width: 100%;
+            text-align: center;
+            opacity: 0.5;
+            font-size: 12px;
+        }
+
+        .god {
+            margin-left: 30%;
+        }
+        .cs {
+            bottom: 30px;
+            left: 91%;
+            transition: all 0.5s;
+            position: sticky;
+        }
+        .cs:hover {
+            transform: scale(1.2, 1.2);
+            cursor: pointer;
+        }

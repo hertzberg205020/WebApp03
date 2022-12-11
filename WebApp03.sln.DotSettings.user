@@ -1,0 +1,48 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/Environment/Hierarchy/EntityFrameworkOptions/IsAlreadyNotifiedAboutEntityFramework/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5824344b_002D0cd2_002D4ae4_002D98e1_002D7a10aeaa9292/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Update" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Controllers.EmpDaoTest.UpdateTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Controllers.EmpDaoTest.Query4Items&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Services.EmpServiceTest.PageTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Controllers.EmpDaoTest.QueryCountsByNameTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Controllers.EmpDaoTest.QueryItemsByNameTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Services.EmpServiceTest.PageByNameTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Controllers.SubjectDaoTest.AddTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Controllers.SubjectDaoTest.UpdateTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Controllers.SubjectDaoTest.SelectById&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Controllers.SubjectDaoTest.Query4ItemsTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Controllers.SubjectDaoTest.QueryTotalCounts&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Controllers.SubjectDaoTest.SelectByName&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Controllers.SubjectDaoTest.QueryItemsByName&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Controllers.SubjectDaoTest.AddAndUpdateTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Controllers.EmpDaoTest.Query4ItemsTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Services.SubjectServiceTest.PageWithEntity&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Controllers.EmpDaoTest.SelectByEmpNo&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Repository.ExamDaoTest.QueryItemsByEmpIdTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Repository.EmpScoreDaoTest.UpdateTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Controllers.SubjectDaoTest.SelectByIdTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Repository.EmpScoreDaoTest.SelectBuIdTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Repository.EmpScoreDaoTest.Query4ItemsWithStatsTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=81cc71b9_002D173a_002D4f01_002D9a22_002D5df89d4cc8b0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="SelectByName" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Controllers.SubjectDaoTest.QueryCountsByNameTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Controllers.SubjectDaoTest.QueryItemsByName&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Controllers.SubjectDaoTest.Query4ItemsTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Services.SubjectServiceTest.PageTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Controllers.SubjectDaoTest.AddTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Controllers.SubjectDaoTest.UpdateTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Controllers.SubjectDaoTest.SelectByIdTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Services.SubjectServiceTest.PageWithEntity&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Controllers.ExamDaoTest.findBySubjectIdAndEmpIdListTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Controllers.ExamDaoTest.findBySubjectIdTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Controllers.ExamDaoTest.findByEmpIdTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Controllers.ExamDaoTest.SelectCountsBySubjectIdTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Controllers.ExamDaoTest.FindValidEmpListTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Controllers.EmpDaoTest.SelectByEmpNo&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Repository.ExamDaoTest.QueryItemsByEmpIdTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F1E70C39-8EDB-4ED9-BBCB-08DDF1E6F470::.NETFramework,Version=v4.8::WebApp03.Tests.Repository.EmpScoreDaoTest.UpdateTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

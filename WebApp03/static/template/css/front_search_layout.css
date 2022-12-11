@@ -1,0 +1,74 @@
+/*** main section ***/
+/* .main-row {
+    height: 1200px;
+} */
+/* .side {
+    border: 1px solid red;
+}
+.main-content {
+    border: 1px solid blue;
+} */
+.side {
+    border-right: 1px solid lightgray;
+}
+.book-category {
+    color: darkslategrey;
+    font-size: 22px;
+    font-weight: 600;
+}
+.category-item {
+    text-indent: 1.5rem;
+}
+.category-item > a {
+    color: dimgrey;
+    font-size: 18px;
+}
+.category-item:hover {
+    background-color: rgba(120,120,120,.1);
+    border-radius: 5px;
+}
+.category-item > a:hover {
+    color: black;
+}
+
+.sale-section {
+    font-size: 22px;
+    color: tomato;
+}
+.sale-section > a{
+    font-size: 22px;
+    color:indianred;
+}
+
+.search-result {
+    font-size: 18px;
+}
+
+.picture {
+    height: 200px;
+    /* border: 1px solid orange; */
+    margin: auto;
+    text-align: center;
+}
+.picture img {
+    height: 100%;
+    margin: auto;
+}
+.title {
+    height: 30px;
+    /* border: 1px solid royalblue; */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.title a:hover {
+    color:rosybrown;
+}
+/* .price {
+    border: 1px solid seagreen;
+} */
+.vLine {
+    border-left: 1px solid lightgray;
+    height: 500px;
+    margin-left: 5%;
+}

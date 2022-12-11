@@ -1,0 +1,173 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@section header
+{
+    <header class="header">
+        <h1>成績管理</h1>
+    </header>
+}
+
+<main class="main">
+    <div class="table_container">
+
+        <div class="container">
+
+            <div class="row justify-content-between">
+                <div class="input-group col-6 mb-3">
+                    <button type="button" class="btn btn-outline-secondary ml-2" id="add_exam_btn" data-toggle="modal" data-target="#add_exam_modal">
+                        ➕登記成績
+                    </button >
+                    <div class="col-3 mr-auto mt-1">
+                        <select id="subject_options" name="subjectId">
+                            @* <option value="0">===請選擇科目===</option> *@
+                            @* <option >0000001_zzzzzzz</option> *@
+                            @* <option>test2</option> *@
+                            @* <option>test3</option> *@
+                        </select >
+                    </div>
+                </div>
+
+                @* <div class="input-group col-6 mb-3"> *@
+                @*     <input type="search" id="keyword_input" class="form-control rounded" placeholder="依員工姓名搜尋" *@
+                @*            aria-label="Search" aria-describedby="search-addon"/> *@
+                @*     <button type="button" class="btn btn-outline-info ml-2" id="search_btn">search</button> *@
+                @* </div> *@
+
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <table class="table table-bordered text-center table-hover">
+                        <thead class="table-success">
+                        <tr>
+                            <th scope="col" style="display: none">考試編號</th>
+                            <th scope="col" style="display: none">科目編號</th>
+                            <th scope="col" style="display: none">員工編號</th>
+                            <th scope="col" class="col-1">排名</th>
+                            <th scope="col" class="col-2">員工姓名</th>
+                            <th scope="col" class="col-2">分數</th>
+                            <th scope="col" class="col-2">編輯/刪除</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        @* <tr> *@
+                        @*     <th scope="row" style="display: none">1</th> *@
+                        @*     <th scope="row" style="display: none">1</th> *@
+                        @*     <th scope="row" style="display: none">1</th> *@
+                        @*     <td>這是員工姓名</td> *@
+                        @*     <td>99</td> *@
+                        @*     <td> *@
+                        @*         <button type="button" class="btn btn-light" data-target="#update_exam_modal" data-toggle="modal"> *@
+                        @*             <span class="update">✏</span> *@
+                        @*         </button> *@
+                        @*         <button type="button" class="btn btn-light"> *@
+                        @*             <span class="delete">❌</span> *@
+                        @*         </button> *@
+                        @*     </td> *@
+                        @* </tr> *@
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="page_nav">
+                @* <a href="#">第一頁</a> *@
+                @* <a href="#">上一頁</a> *@
+                @* <a href="#">3</a> *@
+                @* 【4】 *@
+                @* <a href="#">5</a> *@
+                @* <a href="#">下一頁</a> *@
+                @* <a href="#">最末頁</a> *@
+                @* <span> *@
+                @*     共4頁，20筆紀錄 <input value="4" type="number" name="pageNo" id="pageNo" size="3"/> 頁 *@
+                @*     <input type="submit" value="Go" class="btn btn-info ml-2"/> *@
+                @* </span> *@
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<div id="modal_container">
+    <div class="modal fade" id="add_exam_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="add_emp_modal_label">登記分數</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="add_form">
+                        <div class="form-group">
+                            <label for="add_emp_no" class="col-form-label">員工編號: </label>
+
+                            @* <input type="text" class="form-control" id="add_emp_no" name="EmpNo"> *@
+                            <select id="add_emp_no" name="EmpNo" class="form-control">
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="add_subject_id" class="col-form-label">課目編號:</label>
+                            <input type="text" class="form-control" id="add_subject_id" name="SubjectId" value="" readonly="readonly">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="add_score" class="col-form-label">分數:</label>
+                            <input type="text" class="form-control" id="add_score" name="Score">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">返回</button>
+                    <button type="button" class="btn btn-primary" id="add_exam_submit_btn">送出</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="update_exam_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="update_modal_label">更新成績資訊</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="update_form">
+                        <input type="text" class="form-control" name="Id" id="update_exam_id" hidden value="">
+                        
+                        <div class="form-group">
+                            <label for="update_emp_no" class="col-form-label">員工: </label>
+                            <input type="text" class="form-control" name="EmpNo" id="update_emp_no" readonly value="">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="update_subject_name" class="col-form-label">科目:</label>
+                            <input type="text" class="form-control" id="update_subject_name" name="subjectName" readonly="">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="update_score" class="col-form-label">修改分數:</label>
+                            <input type="text" class="form-control" id="update_score" name="Score">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">返回</button>
+                    <button type="button" class="btn btn-primary" id="update_exam_submit_btn">送出</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- sweetalert -->
+@* <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> *@
+<script src="@Href("~/static")/resources/sweetalert/sweetalert.min.js"></script>
+<script src="~/static/Exam/js/exam_view.js"></script>

@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@section header
+{
+    <header class="header">
+        <h1>成績查詢</h1>
+    </header>
+}
+
+<main class="main">
+    <div class="table_container">
+
+        <div class="container">
+
+            <div class="row justify-content-between">
+                <div class="input-group col-6 mb-3">
+                    <div class="col-3 mr-auto mt-1">
+                        <select id="emp_options" name="empId">
+                            @* <option value="0">===請選擇員工===</option> *@
+                            @* <option>abc</option> *@
+                            @* <option>def</option> *@
+                            @* <option>ghi</option> *@
+                        </select >
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <table class="table table-bordered text-center table-hover">
+                        <thead class="table-success">
+                        <tr>
+                            <th scope="col" class="col-2">課目</th>
+                            <th scope="col" class="col-2">排名</th>
+                            <th scope="col" class="col-2">分數</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        @* <tr> *@
+                        @*     <th scope="row">數學</th> *@
+                        @*     <td>1/26</td> *@
+                        @*     <td>99</td> *@
+                        @* </tr> *@
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="page_nav">
+                @* <a href="#">第一頁</a> *@
+                @* <a href="#">上一頁</a> *@
+                @* <a href="#">3</a> *@
+                @* 【4】 *@
+                @* <a href="#">5</a> *@
+                @* <a href="#">下一頁</a> *@
+                @* <a href="#">最末頁</a> *@
+                @* <span> *@
+                @*     共4頁，20筆紀錄 <input value="4" type="number" name="pageNo" id="pageNo" size="3"/> 頁 *@
+                @*     <input type="submit" value="Go" class="btn btn-info ml-2"/> *@
+                @* </span> *@
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- sweetalert -->
+@* <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> *@
+<script src="@Href("~/static")/resources/sweetalert/sweetalert.min.js"></script>
+<script src="~/static/Exam/js/select_view.js"></script>
